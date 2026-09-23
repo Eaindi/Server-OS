@@ -1,0 +1,19 @@
+===BEGIN LAB1 SUBMISSION===
+student_id: 6705140069
+timestamp: 2026-09-23T07:30:59Z
+hostname: ubuntu
+---[user: getent passwd]---
+olga171:x:1002:1004::/home/olga171:/bin/bash
+---[group: getent group]---
+dba:x:1003:olga171
+---[user-in-group: id]---
+uid=1002(olga171) gid=1004(olga171) groups=1004(olga171),1003(dba)
+---[file stat: home file mode/owner]---
+/home/olga171/report_3782.txt mode=740 owner=olga171 group=dba
+---[sshd effective config]---
+port 2502
+permitrootlogin no
+passwordauthentication no
+---[integrity]---
+sshd_sha256: 9957abca21db57f93355d0f58a9ce6a97603e5eddc605dbd1a59d4d388a5a8ba
+===END LAB1 SUBMISSION===
